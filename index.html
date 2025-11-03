@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jahangir — Visionary Creator | Developer | Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      overflow-x: hidden;
+    }
+
+    /* Smooth gradient text */
+    .gradient-text {
+      background: linear-gradient(90deg, #00c6ff, #ffb56b, #4facfe);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 6s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.95)),
+        url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80') 
+        center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #cbd5e1;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+
+    .btn-main {
+      background: linear-gradient(90deg,#00c6ff,#0072ff);
+      color: #fff;
+      padding: 0.8rem 1.6rem;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-main:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,198,255,0.4);
+    }
+
+    /* About Section */
+    .about {
+      padding: 5rem 2rem;
+      background: #111827;
+      text-align: center;
+    }
+
+    .about img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #00c6ff;
+      box-shadow: 0 0 25px rgba(0,198,255,0.4);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Skills */
+    .skills {
+      padding: 5rem 2rem;
+      background: #0f172a;
+      text-align: center;
+    }
+
+    .skill-bar {
+      width: 80%;
+      background: #1e293b;
+      margin: 1rem auto;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 12px;
+      background: linear-gradient(90deg,#00c6ff,#0072ff);
+      border-radius: 20px;
+      animation: fill 3s ease-out;
+    }
+
+    @keyframes fill {
+      from { width: 0; }
+      to { width: var(--width); }
+    }
+
+    /* Projects */
+    .projects {
+      background: #111827;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,198,255,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 5rem 2rem;
+      background: linear-gradient(180deg,#0f172a,#1e293b);
+      text-align: center;
+    }
+
+    .contact a {
+      color: #00c6ff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #0f172a;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="gradient-text">I’m Jahangir</h1>
+    <p>A visionary creator who believes in designing experiences, not just interfaces.  
+       I merge design thinking, storytelling, and technology to craft digital worlds that inspire and connect people.</p>
+    <div class="mt-6">
+      <a href="#" class="btn-main">View My Work</a>
+      <a href="mailto:jahangir@example.com" class="btn-main">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <img src="https://images.unsplash.com/photo-1603415526960-f7e0328b0f69?w=500&q=80" alt="Jahangir">
+    <h2 class="text-3xl font-bold gradient-text mb-4">About Me</h2>
+    <p class="max-w-2xl mx-auto text-gray-400">
+      Hi, I’m <strong>Jahangir</strong> — a creative professional who thrives at the intersection of technology and imagination.
+      My goal is to bring ideas to life through beautiful design, intuitive interfaces, and scalable development.
+      Whether it’s building responsive web apps or crafting digital stories, I’m always driven by purpose and creativity.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2 class="text-3xl font-bold gradient-text mb-8">My Skills</h2>
+
+    <div class="max-w-2xl mx-auto">
+      <p class="text-left text-gray-300">Web Development</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="--width:90%;width:90%;"></div></div>
+
+      <p class="text-left text-gray-300">UI/UX Design</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="--width:85%;width:85%;"></div></div>
+
+      <p class="text-left text-gray-300">Creative Strategy</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="--width:80%;width:80%;"></div></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2 class="text-3xl font-bold gradient-text mb-8">Featured Projects</h2>
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Project 1">
+        <h3 class="font-semibold text-xl text-white mb-2">Digital Agency Site</h3>
+        <p class="text-gray-400 text-sm">A sleek landing page for a creative agency built using modern design systems.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80" alt="Project 2">
+        <h3 class="font-semibold text-xl text-white mb-2">Smart Dashboard</h3>
+        <p class="text-gray-400 text-sm">An intelligent dashboard that visualizes user data with clean analytics charts.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80" alt="Project 3">
+        <h3 class="font-semibold text-xl text-white mb-2">Creative Portfolio</h3>
+        <p class="text-gray-400 text-sm">A vibrant portfolio showcasing design and storytelling through visuals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2 class="text-3xl font-bold gradient-text mb-4">Let’s Collaborate</h2>
+    <p class="text-gray-300 max-w-xl mx-auto mb-6">
+      Got an idea, project, or collaboration in mind?  
+      I’d love to hear about it and help you bring it to life. Let’s build something extraordinary together.
+    </p>
+    <a href="mailto:jahangir@example.com" class="btn-main">Get in Touch</a>
+  </section>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> Jahangir — Visionary Creator | Designed with ❤️
+  </footer>
+
+</body>
+</html>
