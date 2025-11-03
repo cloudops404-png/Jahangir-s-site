@@ -75,19 +75,37 @@
       box-shadow: 0 8px 25px rgba(0,198,255,0.4);
     }
 
-    <!-- About Section -->
-<section class="about">
-  <!-- 👇 Rectangle style boy picture -->
-  <img src="https://images.unsplash.com/photo-1603415526960-f7e0328b0f69?auto=format&fit=crop&w=800&q=80" 
-       alt="Jahangir"
-       style="width: 300px; height: auto; border-radius: 12px; border: 3px solid #00c6ff; box-shadow: 0 0 25px rgba(0,198,255,0.4); margin-bottom: 1.5rem; object-fit: cover;">
-  
-  <h2 class="text-3xl font-bold gradient-text mb-4">About Me</h2>
-  <p class="max-w-2xl mx-auto text-gray-400">
-    Hi, I’m <strong>Jahangir</strong> — a creative professional who thrives at the intersection of technology and imagination.
-    My goal is to bring ideas to life through beautiful design, intuitive interfaces, and scalable development.
-    Whether it’s building responsive web apps or crafting digital stories, I’m always driven by purpose and creativity.
-  </p>
+    <!-- About Me Section -->
+<section class="py-16 px-6 bg-slate-950 text-center md:text-left" id="about">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-12">
+    
+    <!-- Left: Picture -->
+    <div class="flex justify-center md:justify-start">
+      <img src="https://images.unsplash.com/photo-1603415526960-f7e0328b0f69?auto=format&fit=crop&w=900&q=80"
+           alt="Jahangir — Creative Professional"
+           style="width: 380px; height: 450px; border-radius: 16px; border: 3px solid #4facfe; 
+                  box-shadow: 0 10px 30px rgba(79,172,254,0.4); object-fit: cover;">
+    </div>
+
+    <!-- Right: Content -->
+    <div>
+      <h2 class="text-4xl font-extrabold gradient-text mb-4">About Me</h2>
+      <p class="text-gray-300 leading-relaxed text-lg">
+        Hello, I’m <span class="font-semibold text-white">Jahangir</span> — a passionate developer and creative thinker who loves turning ideas 
+        into digital reality. With a focus on modern web design, innovation, and user-friendly experiences, 
+        I enjoy crafting websites that are not only functional but also visually inspiring. 
+      </p>
+      <p class="mt-4 text-gray-400 text-base">
+        From building responsive layouts to exploring cloud technologies, my journey is driven by curiosity and purpose. 
+        I believe that technology can make creativity limitless — and every project is a chance to build something impactful.
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-4">
+        <a href="#" class="btn-main">View Portfolio</a>
+        <a href="mailto:jahangir@example.com" class="btn-outline">Hire Me</a>
+      </div>
+    </div>
+  </div>
 </section>
     }
 
